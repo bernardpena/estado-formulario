@@ -1,15 +1,28 @@
 import React from 'react'
-// import SocialButton from "./SocialButton"
+import SocialButton from "./SocialButton"
 // import Alert from "./Alert";
 import Formulario from './Formulario'
 
 
 export default function Registro() {
+
     return (
-        <div>
-            {/* <SocialButton /> */}
-            {/* <Alert /> */}
-            <Formulario />
+
+        <div className="container">
+            <div className="mb-3 formIngresoDiv">
+                <h1 className='titulo' >Crea una Cuenta</h1>
+                <div className='social'>
+                    <SocialButton facebook="fa-brands fa-facebook" />
+                    <SocialButton instagram="fa-brands fa-instagram" />
+                    <SocialButton linkedin="fa-brands fa-linkedin" />
+                </div>
+                <div>
+                    <div>
+                        <h4 className='mensaje'>o usa tu email para registrarte</h4>
+                    </div>
+                    <Formulario />
+                </div>
+            </div>
         </div>
     )
 }

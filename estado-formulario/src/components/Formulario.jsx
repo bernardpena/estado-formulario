@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
-
+import SocialButtons from './SocialButton';
 
 const Formulario = () => {
     //Estados del formulario
@@ -10,8 +10,6 @@ const Formulario = () => {
     const [password2, setPassword2] = useState('');
     const [error, setError] = useState(false);
     const [error2, setError2] = useState(false);
-
-
 
     //Función antes de enviar el formulario
     const validarDatos = (e) => {
@@ -39,17 +37,6 @@ const Formulario = () => {
         <form className='formIngreso' onSubmit={validarDatos}>
             <div className="container">
                 <div className="mb-3 formIngresoDiv">
-                    <h1 className='titulo' >Crea una Cuenta</h1>
-                    <div>
-                        <div className="footer-icon">
-                            <a href="#"><i className="fa-brands fa-facebook"></i></a>
-                            <a href="#"><i className="fa-brands fa-instagram"></i></a>
-                            <a href="#"><i className="fa-brands fa-linkedin"></i></a>
-                        </div>
-                    </div>
-                    <div>
-                        <h4 className='mensaje'>o usa tu email para registrarte</h4>
-                    </div>
                     <div className="mb-3 infoPersona">
                         <div className="mb-3">
                             <input type="text" placeholder="Nombre" className='form-control nombre' onChange={(e) => setNombre(e.target.value)}
@@ -80,8 +67,8 @@ const Formulario = () => {
                         {error2 ? <p>Las contraseñas no Coinciden</p> : null}
                     </div>
                 </div>
-            </div>c
-        </form>
+            </div >
+        </form >
 
     )
 }
