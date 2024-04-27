@@ -12,6 +12,7 @@ const Formulario = () => {
     const [error2, setError2] = useState(false);
 
 
+
     //Función antes de enviar el formulario
     const validarDatos = (e) => {
         e.preventDefault();
@@ -19,6 +20,7 @@ const Formulario = () => {
         //Validación;
         if (nombre === '' || email === '' || password === '' || password2 === '') {
             setError(true);
+
             return;
         } else if (password != password2) {
             setError2(true);
@@ -35,7 +37,6 @@ const Formulario = () => {
 
     return (
         <form className='formIngreso' onSubmit={validarDatos}>
-
             <div className="container">
                 <div className="mb-3 formIngresoDiv">
                     <h1 className='titulo' >Crea una Cuenta</h1>
