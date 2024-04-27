@@ -1,6 +1,6 @@
 import React from 'react'
 // import SocialButton from "./SocialButton"
-import { Alert } from 'bootstrap'
+// import Alert from "./Alert";
 import Formulario from './Formulario'
 
 
