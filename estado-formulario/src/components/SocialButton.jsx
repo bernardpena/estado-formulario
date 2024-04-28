@@ -3,7 +3,7 @@ import React from 'react'
 
 const SocialButtons = (props) => {
     return (
-        <div>
+        <div className="social">
             <div className="footer-icon">
                 <a href="#"><i className={props.facebook}></i></a>
                 <a href="#"><i className={props.instagram}></i></a>

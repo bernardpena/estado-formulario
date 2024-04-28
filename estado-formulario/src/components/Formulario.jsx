@@ -1,6 +1,8 @@
 import React from 'react'
 import { useState } from 'react';
-import SocialButtons from './SocialButton';
+import Alert from "./Alert"
+
+
 
 const Formulario = () => {
     //Estados del formulario
@@ -22,6 +24,7 @@ const Formulario = () => {
             return;
         } else if (password != password2) {
             setError2(true);
+
             return;
         }
         setError(false);
@@ -30,13 +33,14 @@ const Formulario = () => {
         setEmail('');
         setPassword('');
         setPassword2('');
+        Alert()
     };
 
 
     return (
-        <form className='formIngreso' onSubmit={validarDatos}>
-            <div className="container">
-                <div className="mb-3 formIngresoDiv">
+        <form className="formIngreso" onSubmit={validarDatos}>
+            <div className="containerForm">
+                <div className="mb-3 formIngresoDivForm">
                     <div className="mb-3 infoPersona">
                         <div className="mb-3">
                             <input type="text" placeholder="Nombre" className='form-control nombre' onChange={(e) => setNombre(e.target.value)}

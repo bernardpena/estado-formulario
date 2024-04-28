@@ -16,12 +16,10 @@ export default function Registro() {
                     <SocialButton instagram="fa-brands fa-instagram" />
                     <SocialButton linkedin="fa-brands fa-linkedin" />
                 </div>
-                <div>
-                    <div>
-                        <h4 className='mensaje'>o usa tu email para registrarte</h4>
-                    </div>
-                    <Formulario />
-                </div>
+                <h4 className="mensaje">o usa tu email para registrarte</h4>
+                {/* <div className="formPrincipal" > */}
+                <Formulario />
+                {/* </div> */}
             </div>
         </div>
     )
